@@ -1,4 +1,4 @@
-# Getting Started with Chat Application in React JS
+# Getting Started with React Dynamic Routing
 
 ### This project Consists of 
 - React
