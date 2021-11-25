@@ -1,16 +1,18 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Home from '../Pages/Home';
-import Login from '../Pages/Login';
 
 function AppRouter() {
+    let routes = [
+        { name: 'First', id: 1 },
+        { name: 'Second', id: 2 },
+        { name: 'Three', id: 3 },
+        { name: 'Four', id: 4 },
+    ]
     return (
         <Router>
-           
-            <Route exact path="/login" component={Login} />
             <Route exact path="/" component={Home} />
         </Router>
-
     )
 }
 export default AppRouter;
