@@ -10,9 +10,13 @@ function AppRouter() {
         { name: 'Four', id: 4 },
     ]
     return (
-        <Router>
-            <Route exact path="/" component={Home} />
-        </Router>
+        // <Router>
+        //     <Route exact path="/" component={Home} />
+        // </Router>
+        <div>
+            <h1>React Dynamic Routing</h1>
+            
+        </div>
     )
 }
 export default AppRouter;
