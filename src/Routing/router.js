@@ -1,3 +1,4 @@
+import { userInfo } from "os";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Home from '../Pages/Home';
@@ -15,7 +16,13 @@ function AppRouter() {
         // </Router>
         <div>
             <h1>React Dynamic Routing</h1>
-            
+            {
+                routes.map((item) =>
+                    <div>
+                        <a href={`/user/${item.id}`}>{item.name}</a>
+                    </div>
+                )
+            }
         </div>
     )
 }
